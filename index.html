@@ -1,0 +1,509 @@
+<style>
+    ::-webkit-scrollbar{
+        display: none;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+          
+    <nav>
+        <div class="navigasi">
+            <a href="#project">My Project</a>
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="bg"></div>
+        <div class="headline">
+          <div class="title">VANISSA</div>
+          <div class="title_back">
+            <div class="a">PORTFOLIO</div>
+            <div class="b">PORTFOLIO</div>
+            <div class="c">PORTFOLIO</div>
+            <div class="d">PORTFOLIO</div>
+            <div class="e">PORTFOLIO</div>
+          </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="sub_title">
+            <div class="title2">HELLO</div>
+            <div class="title2_back">
+                <div class="f">HELLO</div>
+                <div class="g">HELLO</div>
+            </div>
+        </div>
+        <div class="profile">
+            <img class="me" src="image/Mask Group 5.png" alt="">
+            <img class="outline" src="image/Group 111.png" alt="">
+        </div>
+        <p>Hai! saya Vanissa. Saya adalah orang yang jujur, pekerja keras dan</br>berusaha melakukan yang terbaik dalam hal apapun itu.</p>
+    </section>
+
+    <section>
+        <div class="tabs">
+            <div class="btn_box">
+                <button id="btn1" onclick="openEDUCATION()">EDUCATION</button>
+                <button id="btn2" onclick="openSOFTWARESKILLS()">SOFTWARE SKILLS</button>
+                <button id="btn3" onclick="openEXPERIENCE()">EXPERIENCE</button>
+            </div>
+        </div>
+
+        <div class="tes2">
+            <div id="content1" class="tabcontent">
+                <img class="gbr" src="image/books.png" alt="">
+                <div class="flex">
+                    <p>2011-2017<br>SD MAITREYAWIRA</p>
+                    <img src="image/Group 112.png" alt="">
+                    <p>2017-2020<br>SMP MAITREYAWIRA</p>
+                    <img src="image/Group 112.png" alt="">
+                    <p>2020-Now<br>SMK MAITREYAWIRA</p>
+                </div>
+                <p>Kompleks Maha Vihara Duta Maitreya, Sungai Panas, Bukit Beruntung,Batam</p>
+            </div>
+    
+            <div id="content2" class="tabcontent">
+                <input type="radio" name="slider" id="s1">
+                <input type="radio" name="slider" id="s2" checked>
+                <input type="radio" name="slider" id="s3">
+                <label for="s1" id="slide1">
+                    <img src="image/photoshop.png" width="35%">
+                </label>
+                <label for="s2" id="slide2">
+                    <img src="image/illustrator.png" width="35%">
+                </label>
+                <label for="s3" id="slide3">
+                    <img src="image/Mask Group 6.png" width="35%">
+                </label>
+            </div>
+    
+            <div id="content3" class="tabcontent">
+                <div class="flex2">
+                    <div class="tb_left">
+                        <h2>PKL</h2>
+                        <p class="p">
+                        Melaksanakan PKL selama 3 bulan pada perusahaan CREATIVE. Selama di CREATIVE saya telah mengerjakan berbagai macam desain 
+                        salah satunya brosur dan<br>ikut serta dalam melakukan tahapan finishing.
+                        </p>
+                    </div>
+                    <div class="tb_right">
+                        <img class="gbr2" src="image/girl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var content1 = document.getElementById("content1");
+            var content3 = document.getElementById("content2");
+            var content3 = document.getElementById("content3");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
+
+            function openEDUCATION(){
+                content1.style.transform = "translateX(0)";
+                content2.style.transform = "translateX(110%)";
+                content3.style.transform = "translateX(110%)";
+                btn1.style.color = "#687351";
+                btn2.style.color = "#9BA17F";
+                btn3.style.color = "#9BA17F";
+                content1.style.transitionDelay = "0.3s";
+                content2.style.transitionDelay = "0s";
+                content3.style.transitionDelay = "0s";
+            }
+            function openSOFTWARESKILLS(){
+                content1.style.transform = "translateX(110%)";
+                content2.style.transform = "translateX(0)";
+                content3.style.transform = "translateX(110%)";
+                btn1.style.color = "#9BA17F";
+                btn2.style.color = "#687351";
+                btn3.style.color = "#9BA17F";
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0.3s";
+                content3.style.transitionDelay = "0s";
+            }
+            function openEXPERIENCE(){
+                content1.style.transform = "translateX(110%)";
+                content2.style.transform = "translateX(110%)";
+                content3.style.transform = "translateX(0)";
+                btn1.style.color = "#9BA17F";
+                btn2.style.color = "#9BA17F";
+                btn3.style.color = "#687351";
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0s";
+                content3.style.transitionDelay = "0.3s";
+            }
+        </script>
+    </section>
+
+    <section id="project">
+        <div class="sub_title2">
+            <div class="title3">CONTENT</div>
+            <div class="title3_back">
+                <div class="h">CONTENT</div>
+                <div class="i">CONTENT</div>
+            </div>
+        </div>
+
+        <div class="list_content">
+            <a href="#illustration">
+                <div class="angka">1</div>
+                <div class="text">ILLUSTRATION</div>
+            </a>
+            <a href="#manipulation">
+                <div class="angka">2</div>
+                <div class="text">MANIPULATION</div>
+            </a>
+            <a href="#modelling">
+                <div class="angka">3</div>
+                <div class="text">3D MODELLING</div>
+            </a>
+            <a href="#other">
+                <div class="angka">4</div>
+                <div class="text">OTHER</div>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="sub_title3">
+            <div class="title4">ILLUSTRATION.</div>
+            <div class="title4_back">
+                <div class="j">ILLUSTRATION.</div>
+                <div class="k">ILLUSTRATION.</div>
+            </div>
+        </div>
+
+        <div class="porto1" id="illustration">
+
+            <img class="kotak" src="image/Group 113.png" alt="">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="image/Desain Karakter.png" style="height:72%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="image/Mask Group 1.png" style="height:72%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="image/Vanissa Wijaya_XI_MM1_Bentuk&Perspektif.png" style="height:72%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/Vanissa Wijaya_Nirmana_XIMMKinema.png" style="height:72%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="jennie" src="image/Ilustrasi Karakter (final).png" style="height:72%">
+                </div>
+                    
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
+                    
+                <br>
+                    
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </section>
+
+    <section>
+        <div class="sub_title3">
+            <div class="title4">MANIPULATION.</div>
+            <div class="title4_back">
+                <div class="j">MANIPULATION.</div>
+                <div class="k">MANIPULATION.</div>
+            </div>
+        </div>
+
+        <div class="porto2" id="manipulation">
+
+            <img class="kotak" src="image/Group 113.png" alt="">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides2 fade">
+                    <img class="img2" src="image/Vanissa Wijaya_XIMM1_DoubleExposure.png" style="height:72%">
+                </div>
+                    
+                <div class="mySlides2 fade">
+                    <img class="img2" src="image/Mask Group 4.png" style="height:72%">
+                </div>
+                    
+                <div class="mySlides2 fade">
+                    <img class="orang" src="image/Vanissa Wijaya_XIMM1_Glitch.png" style="height:72%">
+                </div>
+
+                <a class="prev" onclick="plusSlides2(-1)"></a>
+                <a class="next" onclick="plusSlides2(1)"></a>
+                    
+                <br>
+                    
+                <div style="text-align:center">
+                    <span class="dot2" onclick="currentSlide2(1)"></span> 
+                    <span class="dot2" onclick="currentSlide2(2)"></span> 
+                    <span class="dot2" onclick="currentSlide2(3)"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            let slideIndex2 = 1;
+            showSlides2(slideIndex2);
+            
+            function plusSlides2(n) {
+              showSlides2(slideIndex2 += n);
+            }
+            
+            function currentSlide2(n) {
+              showSlides2(slideIndex2 = n);
+            }
+            
+            function showSlides2(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides2");
+              let dots = document.getElementsByClassName("dot2");
+              if (n > slides.length) {slideIndex2 = 1}
+              if (n < 1) {slideIndex2 = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex2-1].style.display = "block";
+              dots[slideIndex2-1].className += " active";
+            }
+        </script>
+    </section>
+
+    <section>
+        <div class="sub_title3">
+            <div class="title4">3D MODELLING.</div>
+            <div class="title4_back">
+                <div class="j">3D MODELLING.</div>
+                <div class="k">3D MODELLING.</div>
+            </div>
+        </div>
+
+        <div class="porto3" id="modelling">
+
+            <img class="kotak" src="image/Group 113.png" alt="">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides3 fade">
+                    <img class="img3" src="image/rumah.png" style="height:65%">
+                </div>
+                    
+                <div class="mySlides3 fade">
+                    <img class="img3" src="image/5 objek 2.png" style="height:65%">
+                </div>
+                    
+                <div class="mySlides3 fade">
+                    <img class="img3" src="image/13.png" style="height:65%">
+                </div>
+
+                <div class="mySlides3 fade">
+                    <img class="img3" src="image/half.png" style="height:65%">
+                </div>
+                    
+                <a class="prev" onclick="plusSlides3(-1)"></a>
+                <a class="next" onclick="plusSlides3(1)"></a>
+                    
+                <br>
+                    
+                <div style="text-align:center">
+                    <span class="dot3" onclick="currentSlide3(1)"></span> 
+                    <span class="dot3" onclick="currentSlide3(2)"></span> 
+                    <span class="dot3" onclick="currentSlide3(3)"></span>
+                    <span class="dot3" onclick="currentSlide3(4)"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            let slideIndex3 = 1;
+            showSlides3(slideIndex3);
+            
+            function plusSlides3(n) {
+              showSlides3(slideIndex3 += n);
+            }
+            
+            function currentSlide3(n) {
+              showSlides3(slideIndex3 = n);
+            }
+            
+            function showSlides3(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides3");
+              let dots = document.getElementsByClassName("dot3");
+              if (n > slides.length) {slideIndex3 = 1}
+              if (n < 1) {slideIndex3 = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex3-1].style.display = "block";  
+              dots[slideIndex3-1].className += " active";
+            }
+        </script>
+    </section>
+
+    <section>
+        <div class="sub_title3">
+            <div class="title4">OTHER.</div>
+            <div class="title4_back">
+                <div class="j">OTHER.</div>
+                <div class="k">OTHER.</div>
+            </div>
+        </div>
+
+        <div class="porto4" id="other">
+
+            <img class="kotak" src="image/Group 113.png" alt="">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides4 fade">
+                    <img class="kartu" src="image/kartu nama (antonius)-06.png" style="height:65%">
+                </div>
+                    
+                <div class="mySlides4 fade">
+                    <img class="img4" src="image/Sablon-A4.png" style="height:65%">
+                </div>
+                    
+                <div class="mySlides4 fade">
+                    <img class="wedding" src="image/wedding banner-02.png" style="height:65%">
+                </div>
+
+                <div class="mySlides4 fade">
+                    <img class="wedding" src="image/wedding banner-01.png" style="height:65%">
+                </div>
+
+                <div class="mySlides4 fade">
+                    <img class="img4" src="image/BROSUR TM (BOLAK-BALIK)-01.png" style="height:65%">
+                </div>
+
+                <div class="mySlides4 fade">
+                    <img class="img4" src="image/BROSUR TM (BOLAK-BALIK)-02.png" style="height:65%">
+                </div>
+                    
+                <a class="prev" onclick="plusSlides4(-1)"></a>
+                <a class="next" onclick="plusSlides4(1)"></a>
+                    
+                <br>
+                    
+                <div style="text-align:center">
+                    <span class="dot4" onclick="currentSlide4(1)"></span> 
+                    <span class="dot4" onclick="currentSlide4(2)"></span> 
+                    <span class="dot4" onclick="currentSlide4(3)"></span>
+                    <span class="dot4" onclick="currentSlide4(4)"></span>
+                    <span class="dot4" onclick="currentSlide4(5)"></span>
+                    <span class="dot4" onclick="currentSlide4(6)"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            let slideIndex4 = 1;
+            showSlides4(slideIndex4);
+            
+            function plusSlides4(n) {
+              showSlides4(slideIndex4 += n);
+            }
+            
+            function currentSlide4(n) {
+              showSlides4(slideIndex4 = n);
+            }
+            
+            function showSlides4(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides4");
+              let dots = document.getElementsByClassName("dot4");
+              if (n > slides.length) {slideIndex4 = 1}
+              if (n < 1) {slideIndex4 = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex4-1].style.display = "block";  
+              dots[slideIndex4-1].className += " active";
+            }
+        </script>
+    </section>
+
+    <section>
+        <div class="headline">
+            <div class="title">CONTACT</div>
+            <div class="title_back">
+                <div class="a">CONTACT</div>
+                <div class="b">CONTACT</div>
+                <div class="c">CONTACT</div>
+                <div class="d">CONTACT</div>
+                <div class="e">CONTACT</div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="contact">
+                <img src="image/Group 105.png" alt="">
+                <a href="mailto:vanissawijaya123@gmail.com">vanissawijaya123@gmail.com</a>
+                <img src="image/Group 107.png" alt="">
+                <a href="https://www.behance.net/vannw">www.behance.net/vannw</a>
+                <img src="image/Group 108.png" alt="">
+                <a class="number" href="https://wa.me/+6281268151830">+62 812-6815-1830</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
